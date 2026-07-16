@@ -14,7 +14,7 @@ export function generateExpenseReport(
 ):ExpenseReport {
   if (dailyExpenses.some((expense) => expense < 0)) {
     throw new Error("Les despeses no poden ser negatives");
-  } // validacion de errores al principio.
+  } 
 
   const travelDays = dailyExpenses.length;
 
